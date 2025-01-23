@@ -16,7 +16,7 @@ async def convert_dollars_to_rubles(amount: float):
     """
     Конвертирует сумму в долларах в рубли.
     :param amount: Сумма в долларах
-    :return: Конвертированная сумма в рублях
+    :return: Конвертированная сумма в рублях.
     """
     try:
         async with httpx.AsyncClient() as client:
