@@ -22,7 +22,7 @@ async def convert_dollars_to_rubles(amount: float):
         async with httpx.AsyncClient() as client:
             response = await client.get(API_URL)
             response.raise_for_status()
-            data = response.json()
+            data=response.json()
 
         # Получение курса рубля
         ruble_rate = data["rates"].get("RUB")
